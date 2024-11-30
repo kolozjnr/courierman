@@ -15,14 +15,14 @@ class AppServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
-        try {
-            $data['gs'] = GeneralSetting::firstOrFail();
-        } catch (\Throwable $th) {
-            //throw $th;
-        }
-        Schema::defaultStringLength(191);
+        // try {
+        //     $data['gs'] = GeneralSetting::firstOrFail();
+        // } catch (\Throwable $th) {
+        //     //throw $th;
+        // }
+        // Schema::defaultStringLength(191);
 
-        view::share($data);
+        // view::share($data);
     }
 
     /**
